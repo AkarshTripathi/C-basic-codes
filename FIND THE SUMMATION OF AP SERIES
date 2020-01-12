@@ -1,0 +1,62 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int n,p,a,d,b,c;
+   
+    cout<<"This is the program to find the sum of summation \n";
+    
+    cout<<"Note the choices "<<"\n";
+    cout<<"For N: "<<"1"<<"\n";
+    cout<<"For N^2 :2 "<<"\n";
+    cout<<"For N^3 :3 "<<"\n";
+    cout<<"Enter your option";
+    cin>>p;
+   
+    
+   
+    if(p==1)
+    { cout<<"Enter the value of n :";
+      cin>>n;
+       cout<<"Enter the first digit (a) :";
+        cin>>a;
+   
+      
+      if(a!=1)
+      {
+        
+        cout<<"Enter the common difference (d) :";
+        cin>>d;
+        b=(n)/2;
+        c=(2*a+(n-1)*d);
+        int t =(b*c);
+        cout<<"THE SUM IS :"<<t;
+      }
+      else
+      {
+      int r=((n)*(n+1))/2;
+      cout<<"THE SUM IS "<< r;
+      }
+      
+    }
+    else 
+    if(p==2)
+    {  cout<<"Enter the value of n :";
+       cin>>n;
+      
+       int q=((n)*(n+1)*(2*n+1))/6;
+       cout<<"the SUM IS :"<<q;
+    }
+    else
+    if (p==3)
+    {
+        cout<<"Enter the value of n :";
+        cin>>n;         
+        int s= pow((((n)*(n+1))/2),2);
+        cout<<"THE SUM IS :"<<s;
+    }
+    else 
+    cout<<"PLEASE NO! DONT BE OVER SMART OR I DONT KNOW IT ";
+    return 0;
+}
